@@ -4,4 +4,16 @@
     <string name="logo">Logo</string>
     <string name="lupa">Lupa</string>
     <string name="filme">Filme</string>
+    <string name="pais">País:</string>
+    <string name="lingua_original">Língua Original:</string>
+    <string name="diretor">Diretor:</string>
+    <string name="atores">Atores:</string>
+    <string name="ano">Ano:</string>
+    <string name="genero">Gênero:</string>
+    <string name="faixa_etaria">Faixa Etária:</string>
+    <string name="nome">Nome:</string>
+    <string name="lancamento">Lançamento:</string>
+    <string name="duracao">Duração:</string>
+    <string name="sinopse">Sinopse:</string>
+    <string name="premios">Prêmios:</string>
 </resources>

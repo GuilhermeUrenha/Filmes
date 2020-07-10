@@ -8,15 +8,147 @@
     tools:context=".Filme">
 
     <TextView
+        android:id="@+id/lbPas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pais"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbSin"
+        app:layout_constraintTop_toBottomOf="@+id/lbSin" />
+
+    <TextView
+        android:id="@+id/lbLng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lingua_original"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbPas"
+        app:layout_constraintTop_toBottomOf="@+id/lbPas" />
+
+    <TextView
+        android:id="@+id/lbDir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/diretor"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbNom"
+        app:layout_constraintTop_toBottomOf="@+id/lbNom" />
+
+    <TextView
+        android:id="@+id/lbAtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/atores"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbDir"
+        app:layout_constraintTop_toBottomOf="@+id/lbDir" />
+
+    <TextView
+        android:id="@+id/lbAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ano"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbAtr"
+        app:layout_constraintTop_toBottomOf="@+id/lbAtr" />
+
+    <TextView
+        android:id="@+id/lbGen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/genero"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbAno"
+        app:layout_constraintTop_toBottomOf="@+id/lbAno" />
+
+    <TextView
+        android:id="@+id/lbFxe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/faixa_etaria"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbGen"
+        app:layout_constraintTop_toBottomOf="@+id/lbGen" />
+
+    <TextView
         android:id="@+id/tvFilme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginLeft="140dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:text="@string/filme"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="358dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFilme" />
+
+    <TextView
+        android:id="@+id/lbNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/nome"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/lbLan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lancamento"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbFxe"
+        app:layout_constraintTop_toBottomOf="@+id/lbFxe" />
+
+    <TextView
+        android:id="@+id/lbDur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/duracao"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbLan"
+        app:layout_constraintTop_toBottomOf="@+id/lbLan" />
+
+    <TextView
+        android:id="@+id/lbSin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sinopse"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbDur"
+        app:layout_constraintTop_toBottomOf="@+id/lbDur" />
+
+    <TextView
+        android:id="@+id/lbPrm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/premios"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbLng"
+        app:layout_constraintTop_toBottomOf="@+id/lbLng" />
 </androidx.constraintlayout.widget.ConstraintLayout>
