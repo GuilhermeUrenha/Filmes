@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#232323"
     tools:context=".Filme">
-
+    
 
     <EditText
         android:id="@+id/etAno"
@@ -15,13 +15,12 @@
         android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/etAtr"
         app:layout_constraintTop_toBottomOf="@+id/etAtr"
         android:autofillHints=""
         android:labelFor="@id/lbAno"
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:backgroundTint="@android:color/white" />
 
     <EditText
@@ -31,12 +30,11 @@
         android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/etAno"
         app:layout_constraintTop_toBottomOf="@+id/etAno"
         android:autofillHints=""
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:backgroundTint="@android:color/white" />
 
     <EditText
@@ -46,11 +44,10 @@
         android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/etGen"
         app:layout_constraintTop_toBottomOf="@+id/etGen"
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:autofillHints=""
         android:backgroundTint="@android:color/white" />
 
@@ -61,11 +58,10 @@
         android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/etFxe"
         app:layout_constraintTop_toBottomOf="@+id/etFxe"
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:autofillHints=""
         android:backgroundTint="@android:color/white" />
 
@@ -76,11 +72,10 @@
         android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/etLan"
         app:layout_constraintTop_toBottomOf="@+id/etLan"
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:autofillHints=""
         android:backgroundTint="@android:color/white" />
 
@@ -91,11 +86,10 @@
         android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/etPas"
         app:layout_constraintTop_toBottomOf="@+id/etPas"
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:autofillHints=""
         android:backgroundTint="@android:color/white" />
 
@@ -106,11 +100,10 @@
         android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:autofillHints=""
         android:backgroundTint="@android:color/white" />
 
@@ -121,11 +114,10 @@
         android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/etNom"
         app:layout_constraintTop_toBottomOf="@+id/etNom"
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:autofillHints=""
         android:backgroundTint="@android:color/white" />
 
@@ -136,12 +128,11 @@
         android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/etDir"
         app:layout_constraintTop_toBottomOf="@+id/etDir"
         android:autofillHints=""
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:backgroundTint="@android:color/white" />
 
     <EditText
@@ -151,11 +142,10 @@
         android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/etLng"
         app:layout_constraintTop_toBottomOf="@+id/etLng"
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:autofillHints=""
         android:backgroundTint="@android:color/white" />
 
@@ -234,7 +224,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
         android:layout_marginTop="28dp"
         android:text="@string/filme"
         android:textColor="#FFFFFF"
@@ -257,7 +246,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginTop="32dp"
         android:text="@string/nome"
         android:textColor="#FFFFFF"
@@ -309,18 +297,16 @@
         android:layout_width="206dp"
         android:layout_height="24dp"
         android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
-        android:autofillHints=""
-        android:backgroundTint="@android:color/white"
         android:ems="10"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/lbNom"
         app:layout_constraintStart_toEndOf="@+id/lbNom"
         app:layout_constraintTop_toTopOf="@+id/lbNom"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="LabelFor,UnusedAttribute" />
+        android:autofillHints=""
+        tools:ignore="LabelFor"
+        android:backgroundTint="@android:color/white" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -331,10 +317,9 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="none"
-        android:textColor="#FFFFFF"
         android:singleLine="false"
         app:layout_constraintEnd_toEndOf="@+id/etDur"
         app:layout_constraintTop_toBottomOf="@+id/etDur"
-        tools:ignore="LabelFor,UnusedAttribute"
+        tools:ignore="LabelFor"
         android:backgroundTint="@android:color/white" />
 </androidx.constraintlayout.widget.ConstraintLayout>

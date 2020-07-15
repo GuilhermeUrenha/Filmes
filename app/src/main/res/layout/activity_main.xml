@@ -31,6 +31,7 @@
         android:ems="10"
         android:hint="@string/pesquisar"
         android:inputType="textPersonName"
+        android:nextFocusForward="@id/button"
         android:paddingStart="15dp"
         android:paddingLeft="15dp"
         android:paddingTop="5dp"
@@ -51,4 +52,16 @@
         app:layout_constraintTop_toTopOf="@+id/etPesquisa"
         app:srcCompat="@android:drawable/ic_menu_search"
         android:contentDescription="@string/lupa" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="Search"
+        android:text="@string/procurar"
+        app:layout_constraintEnd_toEndOf="@+id/etPesquisa"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/etPesquisa"
+        app:layout_constraintTop_toBottomOf="@+id/etPesquisa" />
 </androidx.constraintlayout.widget.ConstraintLayout>
