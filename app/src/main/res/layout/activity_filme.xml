@@ -14,16 +14,17 @@
     android:padding="2dp"
     tools:context=".Filme">
 
+
     <View
         android:id="@+id/divider"
         android:layout_width="358dp"
         android:layout_height="1dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="52dp"
         android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <EditText
             android:id="@+id/etAno"
@@ -136,8 +137,8 @@
             android:inputType="text"
             android:textColor="#FFFFFF"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/etSin"
+            app:layout_constraintTop_toBottomOf="@+id/etSin"
             tools:ignore="LabelFor,UnusedAttribute" />
 
     <EditText
@@ -262,17 +263,18 @@
             app:layout_constraintStart_toStartOf="@+id/lbGen"
             app:layout_constraintTop_toBottomOf="@+id/lbGen" />
 
-        <TextView
-            android:id="@+id/tvFilme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="@string/filme"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="@+id/divider"
-            app:layout_constraintEnd_toEndOf="@+id/divider"
-            app:layout_constraintStart_toStartOf="@+id/divider" />
+    <TextView
+        android:id="@+id/tvFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/filme"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
             android:id="@+id/lbLan"
@@ -316,7 +318,7 @@
 
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/etSin"
             android:layout_width="325dp"
             android:layout_height="54dp"
             android:layout_marginTop="40dp"
