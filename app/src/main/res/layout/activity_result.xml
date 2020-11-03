@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232323"
+        tools:context=".Result">
+
+
+        <TextView
+            android:id="@+id/etFxe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:text="@string/lorem_ipsum"
+            android:textColor="#C1C1C1"
+            app:layout_constraintStart_toStartOf="@+id/etGen"
+            app:layout_constraintTop_toBottomOf="@+id/etGen" />
+
+        <TextView
+            android:id="@+id/etAtr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:text="@string/lorem_ipsum"
+            android:textColor="#C1C1C1"
+            app:layout_constraintStart_toStartOf="@+id/etDir"
+            app:layout_constraintTop_toBottomOf="@+id/etDir" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="358dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="52dp"
+            android:background="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbPas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/pais"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbSin"
+        app:layout_constraintTop_toBottomOf="@+id/lbSin" />
+
+    <TextView
+            android:id="@+id/lbLng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/lingua_original"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/lbPas"
+            app:layout_constraintTop_toBottomOf="@+id/lbPas" />
+
+    <TextView
+        android:id="@+id/lbDir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/diretor"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+            android:id="@+id/lbAtr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/atores"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/lbDir"
+            app:layout_constraintTop_toBottomOf="@+id/lbDir" />
+
+    <TextView
+        android:id="@+id/lbGen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/genero"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/lbAtr"
+        app:layout_constraintTop_toBottomOf="@+id/lbAtr" />
+
+    <TextView
+            android:id="@+id/lbFxe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/faixa_etaria"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/lbGen"
+            app:layout_constraintTop_toBottomOf="@+id/lbGen" />
+
+        <TextView
+            android:id="@+id/tvFilme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/filme"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="@+id/divider"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbLan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/lancamento"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/lbFxe"
+            app:layout_constraintTop_toBottomOf="@+id/lbFxe" />
+
+        <TextView
+            android:id="@+id/lbDur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/duracao"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/lbLan"
+            app:layout_constraintTop_toBottomOf="@+id/lbLan" />
+
+        <TextView
+            android:id="@+id/lbSin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/sinopse"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/lbDur"
+            app:layout_constraintTop_toBottomOf="@+id/lbDur" />
+
+        <TextView
+            android:id="@+id/lbPrm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/premios"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/lbLng"
+            app:layout_constraintTop_toBottomOf="@+id/lbLng" />
+
+        <TextView
+            android:id="@+id/etDir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:background="#00000000"
+            android:text="@string/lorem_ipsum"
+            android:textColor="#C1C1C1"
+            app:layout_constraintBottom_toBottomOf="@+id/lbDir"
+            app:layout_constraintStart_toEndOf="@+id/lbDir"
+            app:layout_constraintTop_toTopOf="@+id/lbDir"
+            app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/etGen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:text="@string/lorem_ipsum"
+        android:textColor="#C1C1C1"
+        app:layout_constraintStart_toStartOf="@+id/etAtr"
+        app:layout_constraintTop_toBottomOf="@+id/etAtr" />
+
+    <TextView
+            android:id="@+id/etLan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:text="@string/lorem_ipsum"
+            android:textColor="#C1C1C1"
+            app:layout_constraintStart_toStartOf="@+id/etFxe"
+            app:layout_constraintTop_toBottomOf="@+id/etFxe" />
+
+        <TextView
+            android:id="@+id/etDur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:text="@string/lorem_ipsum"
+            android:textColor="#C1C1C1"
+            app:layout_constraintStart_toStartOf="@+id/etLan"
+            app:layout_constraintTop_toBottomOf="@+id/etLan" />
+
+    <TextView
+        android:id="@+id/etSin"
+        android:layout_width="327dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        android:text="@string/dolor_sit_amet"
+        android:textColor="#C1C1C1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/lbSin"
+        app:layout_constraintTop_toBottomOf="@+id/lbSin" />
+
+        <TextView
+            android:id="@+id/etPas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:background="#00000000"
+            android:text="@string/lorem_ipsum"
+            android:textColor="#C1C1C1"
+            app:layout_constraintBottom_toBottomOf="@+id/lbPas"
+            app:layout_constraintStart_toEndOf="@+id/lbPas"
+            app:layout_constraintTop_toTopOf="@+id/lbPas"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/etLng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:text="@string/lorem_ipsum"
+            android:textColor="#C1C1C1"
+            app:layout_constraintStart_toStartOf="@+id/etPas"
+            app:layout_constraintTop_toBottomOf="@+id/etPas" />
+
+        <TextView
+            android:id="@+id/etPrm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:text="@string/lorem_ipsum"
+            android:textColor="#C1C1C1"
+            app:layout_constraintStart_toStartOf="@+id/etLng"
+            app:layout_constraintTop_toBottomOf="@+id/etLng" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="326dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:onClick="Cadastrar"
+        android:text="@string/cadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPrm" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

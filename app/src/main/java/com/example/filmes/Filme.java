@@ -1,148 +1,146 @@
 package com.example.filmes;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class Filme {
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.EditText;
-import android.widget.TextView;
+    int codigo;
+    String titulo;
+    String diretor;
+    String atores;
+    String genero;
+    String faixa;
+    String lancamento;
+    String duracao;
+    String sinopse;
+    String pais;
+    String lingua;
+    String premios;
 
-import org.json.JSONException;
-import org.json.JSONObject;
+    public Filme(){
 
-public class Filme extends AppCompatActivity implements AsyncResponse {
-
-    Intent intent;
-    TextView tvFilme;
-    EditText etDir, etAtr, etAno, etGen, etFxe, etLan, etDur, etSin, etPas, etLng, etPrm;
-    JsonParser jsonParser = new JsonParser();
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_filme);
-
-        tvFilme = this.findViewById(R.id.tvFilme);
-        intent = getIntent();
-        String apiUrl = intent.getStringExtra("url");
-
-        etDir = this.findViewById(R.id.etDir);
-        etAtr = this.findViewById(R.id.etAtr);
-        etAno = this.findViewById(R.id.etAno);
-        etGen = this.findViewById(R.id.etGen);
-        etFxe = this.findViewById(R.id.etFxe);
-        etLan = this.findViewById(R.id.etLan);
-        etDur = this.findViewById(R.id.etDur);
-        etSin = this.findViewById(R.id.etSin);
-        etPas = this.findViewById(R.id.etPas);
-        etLng = this.findViewById(R.id.etLng);
-        etPrm = this.findViewById(R.id.etPrm);
-
-        jsonParser.delegate = this;
-        jsonParser.execute(apiUrl);
     }
 
-    @Override
-    public void processFinished(JSONObject output) {
-        String title = "",
-                director = "",
-                actor = "",
-                year = "",
-                genre = "",
-                line = "",
-                released = "",
-                duration = "",
-                synopsis = "",
-                country = "",
-                language = "",
-                awards = "";
-        try {
-            title = output.get("title").toString();
-            director = output.get("director").toString();
-            actor = output.get("actors").toString();
-            year = output.get("date").toString();
-            genre = output.get("genre").toString();
-            line = output.get("rated").toString();
-            released = output.get("released").toString();
-            duration = output.get("runtime").toString();
-            synopsis = output.get("plot").toString();
-            country = output.get("country").toString();
-            language = output.get("language").toString();
-            awards = output.get("awards").toString();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        tvFilme.setText(title);
-        etDir.setText(director);
-        etAtr.setText(actor);
-        etAno.setText(year);
-        etGen.setText(genre);
-        etFxe.setText(line);
-        etLan.setText(released);
-        etDur.setText(duration);
-        etSin.setText(synopsis);
-        etPas.setText(country);
-        etLng.setText(language);
-        etPrm.setText(awards);
+    public Filme(int _codigo, String _titulo, String _diretor, String _atores, String _genero, String _faixa, String _lancamento, String _duracao, String _sinopse, String _pais, String _lingua, String _premios){
+        this.codigo = _codigo;
+        this.titulo = _titulo;
+        this.diretor = _diretor;
+        this.atores = _atores;
+        this.genero = _genero;
+        this.faixa = _faixa;
+        this.lancamento = _lancamento;
+        this.duracao = _duracao;
+        this.sinopse = _sinopse;
+        this.pais = _pais;
+        this.lingua = _lingua;
+        this.premios = _premios;
+    }
+
+    public Filme(String _titulo, String _diretor, String _atores, String _genero, String _faixa, String _lancamento, String _duracao, String _sinopse, String _pais, String _lingua, String _premios){
+        this.titulo = _titulo;
+        this.diretor = _diretor;
+        this.atores = _atores;
+        this.genero = _genero;
+        this.faixa = _faixa;
+        this.lancamento = _lancamento;
+        this.duracao = _duracao;
+        this.sinopse = _sinopse;
+        this.pais = _pais;
+        this.lingua = _lingua;
+        this.premios = _premios;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getDiretor() {
+        return diretor;
+    }
+
+    public void setDiretor(String diretor) {
+        this.diretor = diretor;
+    }
+
+    public String getAtores() {
+        return atores;
+    }
+
+    public void setAtores(String atores) {
+        this.atores = atores;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getFaixa() {
+        return faixa;
+    }
+
+    public void setFaixa(String faixa) {
+        this.faixa = faixa;
+    }
+
+    public String getLancamento() {
+        return lancamento;
+    }
+
+    public void setLancamento(String lancamento) {
+        this.lancamento = lancamento;
+    }
+
+    public String getDuracao() {
+        return duracao;
+    }
+
+    public void setDuracao(String duracao) {
+        this.duracao = duracao;
+    }
+
+    public String getSinopse() {
+        return sinopse;
+    }
+
+    public void setSinopse(String sinopse) {
+        this.sinopse = sinopse;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public String getLingua() {
+        return lingua;
+    }
+
+    public void setLingua(String lingua) {
+        this.lingua = lingua;
+    }
+
+    public String getPremios() {
+        return premios;
+    }
+
+    public void setPremios(String premios) {
+        this.premios = premios;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*        InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        if(inputManager != null){
-            inputManager.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-        }
-        ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = null;
-        if(connMgr != null){
-            networkInfo = connMgr.getActiveNetworkInfo();
-        }
-        if(networkInfo != null && networkInfo.isConnected() && name.length() != 0){
-            Bundle bundle = new Bundle();
-            bundle.putString("res", name);
-        }
-        StringBuilder builder = null;
-        try {
-            String template = "http://www.omdbapi.com/?t=star+wars&apikey=72353a6e";
-            URL url = new URL(template);
-            request = (HttpURLConnection) url.openConnection();
-            request.setRequestMethod("GET");
-            request.connect();
-            InputStream input = request.getInputStream();
-            reader = new BufferedReader(new InputStreamReader(input));
-            builder = new StringBuilder();
-            String inline;
-            while ((inline = reader.readLine()) != null) {
-                builder.append(inline);
-                builder.append(System.lineSeparator());
-            }
-
-            if(builder.length() == 0){ return; }
-            res = builder.toString();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if(request != null){
-                request.disconnect();
-            }
-            if(reader != null){
-                try{
-                    reader.close();
-                } catch (IOException e){
-                    e.printStackTrace();
-                }
-            }
-        }*/

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FilmeCad">
+
+    <EditText
+        android:id="@+id/txCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/c_digo"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/titulo"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txDiretor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/diretor2"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txAtores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/atores2"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/g_nero"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txFaixa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/faixa_et_ria"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txLancamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/lan_amento"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txDuracao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/dura_o"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txSinopse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/sinopse2"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txPais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/pa_s"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txLingua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/lingua_original2"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txPremios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/pr_mios"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnExcluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/excluir" />
+
+</LinearLayout>

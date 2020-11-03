@@ -1,10 +1,7 @@
 package com.example.filmes;
 
 import android.os.AsyncTask;
-import android.os.Build;
 import android.util.Log;
-
-import androidx.annotation.RequiresApi;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -18,13 +15,12 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class JsonParser extends AsyncTask<String, String, JSONObject> {
+public class JSONParse extends AsyncTask<String, String, JSONObject> {
     static InputStream is = null;
     static JSONObject jsonObject = null;
     static String output = null;
     public AsyncResponse delegate = null;
 
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected JSONObject doInBackground(String... strings) {
         URL url;
@@ -49,9 +45,10 @@ public class JsonParser extends AsyncTask<String, String, JSONObject> {
             StringBuilder total = new StringBuilder(is.available());
             String line;
             while ((line = reader.readLine()) != null) {
-                total.append(line).append(System.lineSeparator());
+                total.append(line).append('\n');
             }
             output = total.toString();
+
         }
         catch (IOException e) {
             Log.e("JSON Parser", "IO error " + e.toString());
