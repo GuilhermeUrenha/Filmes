@@ -33,9 +33,10 @@ public class FilmeCad extends AppCompatActivity {
 
         Intent intent = getIntent();
         String codigo = intent.getStringExtra("codigo");
+        assert codigo != null;
         Filme filme = db.selecionarFilme(Integer.parseInt(codigo));
 
-        txCodigo.setText(filme.getCodigo());
+        txCodigo.setText(codigo);
         txTitulo.setText(filme.getTitulo());
         txAtores.setText(filme.getAtores());
         txGenero.setText(filme.getGenero());
